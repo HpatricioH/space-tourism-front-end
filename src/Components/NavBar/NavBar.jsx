@@ -49,8 +49,8 @@ export const NavBar = () => {
             left: '0px',
             right: '0px',
             bottom: '0px',
-            backgroundColor: 'rgba(0, 0, 0, .25)',
-            backdropFilter: 'grayscale(0.5) opacity(0.8) blur(10px)',
+            background: 'transparent',
+            backdropFilter: 'blur(10px)',
             border: 0,
             borderRadius: 0
           }
