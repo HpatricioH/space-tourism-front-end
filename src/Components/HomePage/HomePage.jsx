@@ -3,7 +3,7 @@ import homeBackground from '../../assets/background-home/background-home-mobile.
 export const HomePage = () => {
   return (
     <>
-      <img src={homeBackground} alt='Earth picture' className='object-cover w-full h-full absolute -z-10' />
+      <div className='w-full h-full'><img src={homeBackground} alt='Earth picture' className='object-cover absolute -z-10' /></div>
       <section className='flex flex-col justify-center items-center gap-20 w-full h-full text-[#fff] p-4 pt-[7rem] font-bellefair'>
         <div className='text-center flex flex-col'>
           <p className='text-[1rem] font-barlow tracking-[0.20rem]'>SO, YOU WANT TO TRAVEL TO</p>

@@ -3,10 +3,12 @@ import hamburger from '../../assets/icons/icon-hamburger.svg'
 import closeIcon from '../../assets/icons/icon-close.svg'
 import Modal from 'react-modal'
 import './NavBar.css'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 Modal.setAppElement('*')
+
+// TODO: active nav with white bar
 
 export const NavBar = () => {
   const [openModal, setOpenModal] = useState(false)
@@ -49,7 +51,7 @@ export const NavBar = () => {
             left: '0px',
             right: '0px',
             bottom: '0px',
-            background: 'transparent',
+            background: 'rgba(15,15,15,0.5)',
             backdropFilter: 'blur(10px)',
             border: 0,
             borderRadius: 0
@@ -59,8 +61,8 @@ export const NavBar = () => {
         <div className='flex flex-col pt-[1rem]'>
           <img src={closeIcon} alt='close icon' onClick={closeModal} className='w-[1.1rem] self-end' />
           <ul className='flex flex-col font-barlow text-[#fff] text-[1.3rem] mt-[3rem] [&_span]:font-bold [&_span]:pr-[2rem] tracking-widest '>
-            <li><span>00</span> Home</li>
-            <li><span>01</span> Destination</li>
+            <li><span>00</span> <Link to='/' onClick={closeModal}>Home</Link></li>
+            <li><span>01</span> <Link to='/destinations' onClick={closeModal}>Destination</Link></li>
             <li><span>02</span> Crew</li>
             <li><span>03</span> Technology</li>
           </ul>
