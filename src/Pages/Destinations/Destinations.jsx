@@ -1,6 +1,7 @@
+import { DestinationsPage } from '../../Components/DestinationsPage/DestinationsPage'
 
 export const Destinations = () => {
   return (
-    <div>Destinations</div>
+    <DestinationsPage />
   )
 }
