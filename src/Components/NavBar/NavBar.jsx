@@ -62,7 +62,7 @@ export const NavBar = () => {
           <img src={closeIcon} alt='close icon' onClick={closeModal} className='w-[1.1rem] self-end' />
           <ul className='flex flex-col font-barlow text-[#fff] text-[1.3rem] mt-[3rem] [&_span]:font-bold [&_span]:pr-[2rem] tracking-widest '>
             <li><span>00</span> <Link to='/' onClick={closeModal}>Home</Link></li>
-            <li><span>01</span> <Link to='/destinations' onClick={closeModal} className='pl-[0.1rem]'>Destinations</Link></li>
+            <li><span>01</span> <Link to='/destinations/1' onClick={closeModal} className='pl-[0.1rem]'>Destinations</Link></li>
             <li><span>02</span> Crew</li>
             <li><span>03</span> Technology</li>
           </ul>
