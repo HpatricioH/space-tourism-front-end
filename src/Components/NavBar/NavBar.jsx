@@ -25,7 +25,6 @@ export const NavBar = () => {
 
   const handleLink = () => {
     history('/')
-    console.log('clicked')
   }
 
   return (
@@ -51,8 +50,8 @@ export const NavBar = () => {
             left: '0px',
             right: '0px',
             bottom: '0px',
-            background: 'rgba(15,15,15,0.5)',
-            backdropFilter: 'blur(10px)',
+            background: 'rgb(33 33 33 / 0.5)',
+            backdropFilter: 'blur(9px)',
             border: 0,
             borderRadius: 0
           }

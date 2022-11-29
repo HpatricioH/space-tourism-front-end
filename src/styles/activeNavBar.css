@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav__active {
+  @apply border-b-[4px] border-[#fff] pb-[0.5rem];
+  }
+
+  .nav__hover {
+    @apply hover:border-b-[4px] pb-[0.5rem] hover:border-[#434448];
+  }
+}
