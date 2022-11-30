@@ -3,6 +3,7 @@ import { getCrewAsync, showCrew } from '../../store/features/crewSlice'
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import crewBg from '../../assets/background crew/background-crew-tablet.jpg'
+import '../../styles/activeNavBar.css'
 
 export const CrewPage = () => {
   const crewMembers = useSelector(showCrew)
@@ -25,16 +26,18 @@ export const CrewPage = () => {
               <div key={crew.id} className='px-[1rem]'>
                 <div className='flex flex-col justify-center items-center'>
                   <div className='border-b-[1px] border-[#59595f] w-full flex justify-center items-center'>
-                    <img src={crew.images} alt='crew member' className='w-[13rem]' />
+                    <img src={crew.images} alt='crew member' className='w-[13rem] pt-[2.5rem]' />
                   </div>
                   <div className='self-center'>
-                    <button>*</button>
-                    <button>*</button>
-                    <button>*</button>
-                    <button>*</button>
+                    <ul className='relative flex flex-row gap-4 py-6 m-0 p-0 list-none'>
+                      <li className='nav__dot-container'><Link to='/crew/1' className={Number(id) === 1 ? 'nav__dot-active' : 'nav__dot'} /></li>
+                      <li className='nav__dot-container'><Link to='/crew/2' className={Number(id) === 2 ? 'nav__dot-active' : 'nav__dot'} /></li>
+                      <li className='nav__dot-container'><Link to='/crew/3' className={Number(id) === 3 ? 'nav__dot-active' : 'nav__dot'} /></li>
+                      <li className='nav__dot-container'><Link to='/crew/4' className={Number(id) === 4 ? 'nav__dot-active' : 'nav__dot'} /></li>
+                    </ul>
                   </div>
                   <div className='text-center'>
-                    <h3 className='uppercase'>{crew.role}</h3>
+                    <h3 className='uppercase font-bellefair tracking-[2.35px] text-[0.875rem] text-[#838386]'>{crew.role}</h3>
                     <h2>{crew.name}</h2>
                     <p>{crew.bio}</p>
                   </div>

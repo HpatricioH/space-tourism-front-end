@@ -20,7 +20,7 @@ export const HomePage = () => {
           </div>
 
           <div className='mt-[8rem] flex justify-center items-center'>
-            <button className='bg-white text-[#333] rounded-full w-[10rem] h-[10rem] text-[1.5rem]'>EXPLORE</button>
+            <button className='bg-white text-[#333] rounded-full w-[10rem] h-[10rem] text-[1.5rem] hover:ring-[2.5rem] hover:outline-none hover:ring-gray-700/[.6]'>EXPLORE</button>
           </div>
         </div>
       </section>
