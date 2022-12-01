@@ -4,10 +4,22 @@
 
 @layer components {
   .nav__active {
-  @apply border-b-[4px] border-[#fff] pb-[0.5rem];
+  @apply border-b-[4px] border-[#fff] pb-[0.5rem] text-[#fff];
   }
 
   .nav__hover {
     @apply hover:border-b-[4px] pb-[0.5rem] hover:border-[#434448];
+  }
+
+  .nav__dot-container {
+    @apply relative block w-[10px] h-[10px]
+  }
+
+  .nav__dot-active {
+    @apply w-full h-full rounded-[50%] absolute overflow-hidden bg-[#fff]
+  }
+
+  .nav__dot {
+    @apply w-full h-full rounded-[50%] absolute overflow-hidden bg-[#59595f] hover:bg-[#777781]
   }
 }
