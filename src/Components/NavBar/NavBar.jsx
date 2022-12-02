@@ -63,7 +63,7 @@ export const NavBar = () => {
             <li><span>00</span> <Link to='/' onClick={closeModal}>Home</Link></li>
             <li><span>01</span> <Link to='/destinations/1' onClick={closeModal} className='pl-[0.1rem]'>Destinations</Link></li>
             <li><span>02</span> <Link to='/crew/1' onClick={closeModal}>Crew</Link></li>
-            <li><span>03</span> Technology</li>
+            <li><span>03</span> <Link to='/technology/1' onClick={closeModal}>Technology</Link></li>
           </ul>
         </div>
       </Modal>
