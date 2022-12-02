@@ -37,9 +37,9 @@ export const TechnologyPage = () => {
                     </ul>
                   </div>
                   <div className='text-center [&_h2]:text-[#D0D6F9] [&_p]:text-[#D0D6F9]'>
-                    <h2>The Terminology...</h2>
+                    <h2 className='uppercase'>The Terminology...</h2>
                     <h3 className='text-[1.9rem] uppercase'>{tech.name}</h3>
-                    <p>{tech.description}</p>
+                    <p className='pt-[1.2rem] leading-[1.6rem] tracking-wide'>{tech.description}</p>
                   </div>
                 </div>
               </div>
