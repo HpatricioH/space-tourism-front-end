@@ -36,12 +36,12 @@ export const DestinationsPage = () => {
                   </ul>
                   <h1 className='text-[3.5rem] font-bellefair pt-[1rem]'>{destination.name}</h1>
                   <p className='text-center normal-case tracking-[0.5px] leading-[1.7rem] font-barlow pb-[1.5rem] text-[#D0D6F9]'>{destination.description}</p>
-                  <div className='border-t-[0.5px] border-[#59595f] w-full text-center pt-[2.5rem]'>
-                    <h3>AVG. DISTANCE</h3>
+                  <div className='flex flex-col justify-center items-center border-t-[0.5px] w-full border-[#59595f] gap-3'>
+                    <h3 className='pt-[1.8rem]'>AVG. DISTANCE</h3>
+                    <p className='text-[1.75rem]'>{destination.distance}</p>
+                    <h3>EST. TRAVEL TIME</h3>
+                    <p className='text-[1.75rem]'>{destination.travel}</p>
                   </div>
-                  <p className='text-[1.75rem]'>{destination.distance}</p>
-                  <h3>EST. TRAVEL TIME</h3>
-                  <p className='text-[1.75rem]'>{destination.travel}</p>
                 </div>
               </div>
             )

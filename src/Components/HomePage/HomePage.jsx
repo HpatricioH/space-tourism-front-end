@@ -1,13 +1,15 @@
-import homeBackground from '../../assets/background-home/background-home-mobile.jpg'
+import homeBgMobile from '../../assets/background-home/background-home-mobile.jpg'
+import homeBgTablet from '../../assets/background-home/background-home-tablet.jpg'
+import homeBgDesktop from '../../assets/background-home/background-home-desktop.jpg'
+import { BgImage } from '../../utilities/BgImage'
 
 export const HomePage = () => {
   return (
     <>
 
       <section className='flex flex-col justify-center items-center gap-20 w-full h-full text-[#fff] font-bellefair mb-[2rem]'>
-        <div className='w-full h-full'><img
-          src={homeBackground} alt='Earth picture' className='fixed top-0 left-0 min-h-full min-w-full -z-10'
-                                       />
+        <div className='w-full h-full'>
+          <BgImage imageBgMobile={homeBgMobile} imageBgTablet={homeBgTablet} imageBgDesktop={homeBgDesktop} />
           <div className='text-center flex flex-col px-4'>
             <p className='text-[1rem] font-barlow tracking-[0.20rem] pt-[8rem] text-[#D0D6F9]'>SO, YOU WANT TO TRAVEL TO</p>
             <h1 className='text-[5.3rem] mt-[2rem]'>SPACE</h1>

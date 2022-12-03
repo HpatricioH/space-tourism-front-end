@@ -53,17 +53,27 @@ export const NavBar = () => {
             background: 'rgb(33 33 33 / 0.5)',
             backdropFilter: 'blur(9px)',
             border: 0,
-            borderRadius: 0
+            borderRadius: 0,
+            padding: '1rem 0 1rem 1rem'
           }
         }}
       >
         <div className='flex flex-col pt-[1rem]'>
-          <img src={closeIcon} alt='close icon' onClick={closeModal} className='w-[1.1rem] self-end' />
+          <img src={closeIcon} alt='close icon' onClick={closeModal} className='w-[1.1rem] self-end mr-[1rem]' />
           <ul className='flex flex-col font-barlow text-[#fff] text-[1.3rem] mt-[3rem] [&_span]:font-bold [&_span]:pr-[2rem] tracking-widest '>
-            <li><span>00</span> <Link to='/' onClick={closeModal}>Home</Link></li>
-            <li><span>01</span> <Link to='/destinations/1' onClick={closeModal} className='pl-[0.1rem]'>Destinations</Link></li>
-            <li><span>02</span> <Link to='/crew/1' onClick={closeModal}>Crew</Link></li>
-            <li><span>03</span> <Link to='/technology/1' onClick={closeModal}>Technology</Link></li>
+            {/* check if URL matches the current location and add active border */}
+            <li className={window.location.pathname === '/' ? 'border-r-[0.2rem]' : 'border-none'}>
+              <span>00</span> <Link to='/' onClick={closeModal}>Home</Link>
+            </li>
+            <li className={window.location.pathname === '/destinations/1' ? 'border-r-[0.2rem]' : 'border-none'}>
+              <span>01</span> <Link to='/destinations/1' onClick={closeModal} className='pl-[0.1rem]'>Destinations</Link>
+            </li>
+            <li className={window.location.pathname === '/crew/1' ? 'border-r-[0.2rem]' : 'border-none'}>
+              <span>02</span> <Link to='/crew/1' onClick={closeModal}>Crew</Link>
+            </li>
+            <li className={window.location.pathname === '/technology/1' ? 'border-r-[0.2rem]' : 'border-none'}>
+              <span>03</span> <Link to='/technology/1' onClick={closeModal}>Technology</Link>
+            </li>
           </ul>
         </div>
       </Modal>
