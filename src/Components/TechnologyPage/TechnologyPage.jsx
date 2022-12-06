@@ -2,7 +2,10 @@ import { useSelector, useDispatch } from 'react-redux'
 import { getTechAsync, showTech } from '../../store/features/technologySlice'
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import techBg from '../../assets/background technology/background-technology-mobile.jpg'
+import techBg from '../../assets/background-technology/background-technology-mobile.jpg'
+import techBgTablet from '../../assets/background-technology/background-technology-tablet.jpg'
+import techBgDesktop from '../../assets/background-technology/background-technology-desktop.jpg'
+import { BgImage } from '../../utilities/BgImage'
 import '../../styles/activeNavBar.css'
 
 export const TechnologyPage = () => {
@@ -17,7 +20,7 @@ export const TechnologyPage = () => {
   return (
     <section className='flex flex-col justify-center items-center gap-20 w-full h-full text-[#fff] font-bellefair mb-[3rem]'>
       <div className='w-full h-full'>
-        <img src={techBg} alt='Earth picture' className='fixed min-h-full min-w-full -z-10' />
+        <BgImage imageBgMobile={techBg} imageBgTablet={techBgTablet} imageBgDesktop={techBgDesktop} />
         <div className='text-center flex flex-col'>
           <p className='text-[1.1rem] font-barlow tracking-[0.25rem] pt-[5.5rem]'><span className='text-[#49494b] font-extrabold'>03 </span>SPACE LAUNCH 101</p>
         </div>

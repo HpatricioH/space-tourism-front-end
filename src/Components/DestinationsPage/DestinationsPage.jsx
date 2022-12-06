@@ -2,7 +2,10 @@ import { useSelector, useDispatch } from 'react-redux'
 import { getDestinationsAsync, showDestinations } from '../../store/features/destinationsSlice'
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import destinationBg from '../../assets/background destination/background-destination-mobile.jpg'
+import destinationBg from '../../assets/background-destination/background-destination-mobile.jpg'
+import destinationBgTablet from '../../assets/background-destination/background-destination-tablet.jpg'
+import destinationBgDesktop from '../../assets/background-destination/background-destination-desktop.jpg'
+import { BgImage } from '../../utilities/BgImage'
 import '../../styles/activeNavBar.css'
 
 export const DestinationsPage = () => {
@@ -16,7 +19,8 @@ export const DestinationsPage = () => {
 
   return (
     <section className='flex flex-col justify-center items-center gap-20 w-full h-full text-[#fff] font-bellefair mb-[3rem]'>
-      <div className='w-full h-full'><img src={destinationBg} alt='Earth picture' className='fixed min-h-full min-w-full -z-10' />
+      <div className='w-full h-full'>
+        <BgImage imageBgMobile={destinationBg} imageBgTablet={destinationBgTablet} imageBgDesktop={destinationBgDesktop} />
         <div className='text-center flex flex-col'>
           <p className='text-[1.1rem] font-barlow tracking-[0.25rem] pt-[5.5rem]'><span className='text-[#49494b] font-extrabold'>01 </span>PICK YOUR DESTINATION</p>
 

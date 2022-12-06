@@ -2,7 +2,10 @@ import { useSelector, useDispatch } from 'react-redux'
 import { getCrewAsync, showCrew } from '../../store/features/crewSlice'
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import crewBg from '../../assets/background crew/background-crew-mobile.jpg'
+import crewBg from '../../assets/background-crew/background-crew-mobile.jpg'
+import crewBgTablet from '../../assets/background-crew/background-crew-tablet.jpg'
+import crewBgDesktop from '../../assets/background-crew/background-crew-desktop.jpg'
+import { BgImage } from '../../utilities/BgImage'
 import '../../styles/activeNavBar.css'
 
 export const CrewPage = () => {
@@ -17,7 +20,7 @@ export const CrewPage = () => {
   return (
     <section className='flex flex-col justify-center items-center gap-20 w-full h-full text-[#fff] font-bellefair mb-[3rem]'>
       <div className='w-full h-full'>
-        <img src={crewBg} alt='Earth picture' className='fixed min-h-full min-w-full -z-10' />
+        <BgImage imageBgMobile={crewBg} imageBgTablet={crewBgTablet} imageBgDesktop={crewBgDesktop} />
         <div className='text-center flex flex-col'>
           <p className='text-[1.1rem] font-barlow tracking-[0.25rem] pt-[5.5rem]'><span className='text-[#49494b] font-extrabold'>02 </span>MEET YOUR CREW</p>
         </div>
