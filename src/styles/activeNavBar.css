@@ -30,4 +30,13 @@
   .nav__tech-active {
     @apply border border-white rounded-[100%] px-[1rem] py-[0.5rem] text-center inline-flex bg-white dark:text-[#333] dark:hover:text-[#333]
   }
+
+  .navbar__active {
+    @apply border-b-[0.2rem] py-[1.2rem]
+  }
+
+  .navbar__hover {
+    @apply py-[1.2rem] hover:border-b-[0.2rem] hover:border-[#434448]
+  }
+
 }
