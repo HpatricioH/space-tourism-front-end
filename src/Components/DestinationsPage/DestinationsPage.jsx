@@ -55,7 +55,6 @@ export const DestinationsPage = () => {
             )
           })}
         </div>
-
       </div>
     </section>
   )
