@@ -29,7 +29,7 @@ export const NavBarModal = () => {
   }
 
   return (
-    <nav className='p-[1rem] absolute w-full min-[640px]:pt-0 min-[640px]:pr-0'>
+    <nav className='p-[1rem] absolute w-full min-[640px]:pt-0 min-[640px]:pr-0 lg:p-[2rem] lg:pr-0'>
       <div className='flex flex-row justify-between'>
         <img src={icon} alt='space icon' onClick={handleLink} className='min-[640px]:pt-[1rem]' />
         <img
@@ -40,6 +40,7 @@ export const NavBarModal = () => {
         />
         <NavBar />
       </div>
+
       <Modal
         isOpen={openModal} closeModal={closeModal} closeTimeoutMS={200} style={{
           overlay: {
@@ -52,8 +53,8 @@ export const NavBarModal = () => {
             left: '0px',
             right: '0px',
             bottom: '0px',
-            background: 'rgb(33 33 33 / 0.5)',
-            backdropFilter: 'blur(9px)',
+            background: '#3b3c3f35',
+            backdropFilter: 'blur(12px)',
             border: 0,
             borderRadius: 0,
             padding: '1rem 0 1rem 1rem'

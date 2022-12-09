@@ -27,9 +27,9 @@ export const CrewPage = () => {
         {crewMembers.map((crew) => {
           return (
             <div key={crew.id} className='px-[1rem] min-[640px]:pt-[2rem]'>
-              <div className='flex flex-col justify-center items-center gap-4 tracking-wide min-[640px]:flex-col-reverse min-[640px]:m-auto min-[640px]:w-[90%]'>
+              <div className='flex flex-col justify-center items-center gap-4 tracking-wide min-[640px]:flex-col-reverse min-[640px]:m-auto min-[640px]:w-[35rem]'>
                 <div className='border-b-[1px] border-[#59595f] w-full flex justify-center items-center min-[640px]:border-none min-[640px]:relative'>
-                  <img src={crew.images} alt='crew member' className='w-[13rem] pt-[2.5rem] min-[640px]:w-[auto] min-[640px]:h-[23.1rem] min-[640px]:pt-0 min-[640px]:absolute min-[640px]:top-[0.5rem]' />
+                  <img src={crew.images} alt='crew member' className='w-[13rem] pt-[2.5rem] min-[640px]:w-[auto] min-[640px]:h-[26.7rem] min-[640px]:pt-0 min-[640px]:absolute min-[640px]:top-[0.5rem]' />
                 </div>
                 <div className='self-center'>
                   <ul className='relative flex flex-row gap-4 py-2 m-0 p-0 list-none'>

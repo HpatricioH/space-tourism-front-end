@@ -30,7 +30,7 @@ export const DestinationsPage = () => {
           {destinations.map((destination) => {
             return (
               <div key={destination.id} className='px-[1rem]'>
-                <div className='flex flex-col justify-center items-center gap-4 uppercase [&_h3]:font-barlow [&_h3]:text-[0.875rem] [&_h3]:tracking-[2.35px] [&_h3]:text-[#D0D6F9] min-[640px]:m-auto min-[640px]:w-[80%]'>
+                <div className='flex flex-col justify-center items-center gap-4 uppercase [&_h3]:font-barlow [&_h3]:text-[0.875rem] [&_h3]:tracking-[2.35px] [&_h3]:text-[#D0D6F9] min-[640px]:m-auto min-[640px]:w-[30rem]'>
                   <img src={destination.images} className='w-[13rem] pt-[2rem]' alt='moon destination' />
                   <ul className='flex flex-row gap-5 justify-center items-center pt-[0.5rem] font-barlow text-[1rem] tracking-[2.7px] text-[#D0D6F9]'>
                     <li><Link to='/destinations/1' className={Number(id) === 1 ? 'nav__active' : 'nav__hover'}>MOON</Link></li>

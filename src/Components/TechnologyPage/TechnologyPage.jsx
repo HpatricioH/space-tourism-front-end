@@ -31,7 +31,7 @@ export const TechnologyPage = () => {
                 <div className='pt-[2rem]'>
                   <img src={tech.imglandscape} alt={tech.name} className='w-full' />
                 </div>
-                <div className='p-4 flex flex-col justify-center items-center gap-6 pt-[2rem] tracking-wider min-[640px]:m-auto min-[640px]:w-[65%]'>
+                <div className='p-4 flex flex-col justify-center items-center gap-6 pt-[2rem] tracking-wider min-[640px]:m-auto min-[640px]:w-[30rem]'>
                   <div>
                     <ul className='flex flex-row gap-4'>
                       <li><Link to='/technology/1' className={Number(id) === 1 ? 'nav__tech-active' : 'nav__tech'}>1</Link></li>

@@ -38,5 +38,4 @@
   .navbar__hover {
     @apply py-[1.2rem] hover:border-b-[0.2rem] hover:border-[#434448]
   }
-
 }

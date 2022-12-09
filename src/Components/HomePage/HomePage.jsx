@@ -10,7 +10,7 @@ export const HomePage = () => {
       <section className='flex flex-col justify-center items-center gap-20 w-full h-full text-[#fff] font-bellefair mb-[2rem]'>
         <div className='w-full h-full'>
           <BgImage imageBgMobile={homeBgMobile} imageBgTablet={homeBgTablet} imageBgDesktop={homeBgDesktop} />
-          <div className='text-center flex flex-col px-4 min-[468px]:m-auto min-[468px]:w-[80%] min-[640px]:w-[60%]'>
+          <div className='text-center flex flex-col px-4 min-[468px]:m-auto min-[468px]:w-[80%] min-[640px]:w-[30rem]'>
             <p className='text-[1rem] font-barlow tracking-[0.20rem] pt-[8rem] text-[#D0D6F9]'>SO, YOU WANT TO TRAVEL TO</p>
             <h1 className='text-[5.3rem] mt-[1rem] min-[468px]:text-[7.3rem] min-[468px]:mt-[0.1rem]'>SPACE</h1>
             <p className='text-[1.2rem] pt-[0.5rem] text-[#D0D6F9] font-barlow min-[468px]:pt-[0]'>
