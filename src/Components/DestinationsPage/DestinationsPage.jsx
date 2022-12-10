@@ -21,8 +21,10 @@ export const DestinationsPage = () => {
     <section className='flex flex-col justify-center items-center gap-20 w-full h-full text-[#fff] font-bellefair mb-[3rem]'>
       <div className='w-full h-full'>
         <BgImage imageBgMobile={destinationBg} imageBgTablet={destinationBgTablet} imageBgDesktop={destinationBgDesktop} />
-        <div className='text-center flex flex-col min-[640px]:text-left min-[640px]:pl-[1.5rem] '>
-          <p className='text-[1.1rem] font-barlow tracking-[0.25rem] pt-[5.5rem]'><span className='text-[#49494b] font-extrabold'>01 </span>PICK YOUR DESTINATION</p>
+        <div className='text-center flex flex-col min-[640px]:text-left min-[640px]:pl-[1.5rem] lg:pt-[5rem]'>
+          <p className='text-[1.1rem] font-barlow tracking-[0.25rem] pt-[5.5rem]'>
+            <span className='text-[#49494b] font-extrabold'>01 </span>PICK YOUR DESTINATION
+          </p>
 
         </div>
 
@@ -30,24 +32,28 @@ export const DestinationsPage = () => {
           {destinations.map((destination) => {
             return (
               <div key={destination.id} className='px-[1rem]'>
-                <div className='flex flex-col justify-center items-center gap-4 uppercase [&_h3]:font-barlow [&_h3]:text-[0.875rem] [&_h3]:tracking-[2.35px] [&_h3]:text-[#D0D6F9] min-[640px]:m-auto min-[640px]:w-[30rem]'>
-                  <img src={destination.images} className='w-[13rem] pt-[2rem]' alt='moon destination' />
-                  <ul className='flex flex-row gap-5 justify-center items-center pt-[0.5rem] font-barlow text-[1rem] tracking-[2.7px] text-[#D0D6F9]'>
-                    <li><Link to='/destinations/1' className={Number(id) === 1 ? 'nav__active' : 'nav__hover'}>MOON</Link></li>
-                    <li><Link to='/destinations/2' className={Number(id) === 2 ? 'nav__active' : 'nav__hover'}>MARS</Link></li>
-                    <li><Link to='/destinations/3' className={Number(id) === 3 ? 'nav__active' : 'nav__hover'}>EUROPA</Link></li>
-                    <li><Link to='/destinations/4' className={Number(id) === 4 ? 'nav__active' : 'nav__hover'}>TITAN</Link></li>
-                  </ul>
-                  <h1 className='text-[3.5rem] font-bellefair pt-[1rem]'>{destination.name}</h1>
-                  <p className='text-center normal-case tracking-[0.5px] leading-[1.7rem] font-barlow pb-[1.5rem] text-[#D0D6F9]'>{destination.description}</p>
-                  <div className='flex flex-col justify-center items-center border-t-[0.5px] w-full border-[#59595f] gap-3 min-[640px]:flex-row min-[640px]:gap-[8rem] min-[640px]:items-baseline'>
-                    <div>
-                      <h3 className='pt-[1.8rem] text-center'>AVG. DISTANCE</h3>
-                      <p className='text-[1.75rem]'>{destination.distance}</p>
-                    </div>
-                    <div>
-                      <h3 className='text-center'>EST. TRAVEL TIME</h3>
-                      <p className='text-[1.75rem] text-center'>{destination.travel}</p>
+                <div className='flex flex-col justify-center items-center gap-4 uppercase [&_h3]:font-barlow [&_h3]:text-[0.875rem] [&_h3]:tracking-[2.35px] [&_h3]:text-[#D0D6F9] min-[640px]:m-auto min-[640px]:w-[30rem] lg:flex-row lg:w-[55rem] lg:gap-[8rem]'>
+                  <img src={destination.images} className='w-[13rem] pt-[2rem] lg:w-[20rem]' alt='moon destination' />
+                  <div className='text-center'>
+
+                    <ul className='flex flex-row gap-5 justify-center items-center pt-[0.5rem] font-barlow text-[1rem] tracking-[2.7px] text-[#D0D6F9] lg:justify-start lg:items-start'>
+                      <li><Link to='/destinations/1' className={Number(id) === 1 ? 'nav__active' : 'nav__hover'}>MOON</Link></li>
+                      <li><Link to='/destinations/2' className={Number(id) === 2 ? 'nav__active' : 'nav__hover'}>MARS</Link></li>
+                      <li><Link to='/destinations/3' className={Number(id) === 3 ? 'nav__active' : 'nav__hover'}>EUROPA</Link></li>
+                      <li><Link to='/destinations/4' className={Number(id) === 4 ? 'nav__active' : 'nav__hover'}>TITAN</Link></li>
+                    </ul>
+                    <h1 className='text-[3.5rem] font-bellefair pt-[1rem] lg:text-left'>{destination.name}</h1>
+                    <p className='text-center normal-case tracking-[0.5px] leading-[1.7rem] font-barlow pb-[1.5rem] text-[#D0D6F9] lg:text-left'>{destination.description}</p>
+
+                    <div className='flex flex-col justify-center items-center border-t-[0.5px] w-full border-[#59595f] gap-3 min-[640px]:flex-row min-[640px]:gap-[8rem] min-[640px]:items-baseline lg:justify-start lg:items-baseline'>
+                      <div>
+                        <h3 className='pt-[1.8rem] text-center'>AVG. DISTANCE</h3>
+                        <p className='text-[1.75rem]'>{destination.distance}</p>
+                      </div>
+                      <div>
+                        <h3 className='text-center'>EST. TRAVEL TIME</h3>
+                        <p className='text-[1.75rem] text-center'>{destination.travel}</p>
+                      </div>
                     </div>
                   </div>
                 </div>
