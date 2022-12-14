@@ -24,11 +24,11 @@
   }
 
   .nav__tech {
-    @apply border border-white rounded-[100%] px-[1rem] py-[0.5rem] text-center inline-flex  dark:border-[#59595f] dark:hover:border-white  dark:text-white dark:hover:text-white
+    @apply border border-white rounded-[100%] px-[1rem] py-[0.5rem] text-center inline-flex  dark:border-[#59595f] dark:hover:border-white  dark:text-white dark:hover:text-white lg:px-[1.3rem] lg:py-[0.8rem]
   }
 
   .nav__tech-active {
-    @apply border border-white rounded-[100%] px-[1rem] py-[0.5rem] text-center inline-flex bg-white dark:text-[#333] dark:hover:text-[#333]
+    @apply border border-white rounded-[100%] px-[1rem] py-[0.5rem] text-center inline-flex bg-white dark:text-[#333] dark:hover:text-[#333] lg:px-[1.3rem] lg:py-[0.8rem]
   }
 
   .navbar__active {

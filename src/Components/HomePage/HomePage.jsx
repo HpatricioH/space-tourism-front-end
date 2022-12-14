@@ -2,11 +2,18 @@ import homeBgMobile from '../../assets/background-home/background-home-mobile.jp
 import homeBgTablet from '../../assets/background-home/background-home-tablet.jpg'
 import homeBgDesktop from '../../assets/background-home/background-home-desktop.jpg'
 import { BgImage } from '../../utilities/BgImage'
+import { useNavigate } from 'react-router-dom'
 
 export const HomePage = () => {
+  const navigate = useNavigate()
+
+  const handleClick = (e) => {
+    e.preventDefault()
+    navigate('/destinations/1')
+  }
+
   return (
     <>
-
       <section className='flex flex-col justify-center items-center gap-20 w-full h-full text-[#fff] font-bellefair mb-[2rem]'>
         <div className='w-full h-full lg:flex lg:flex-row'>
           <BgImage imageBgMobile={homeBgMobile} imageBgTablet={homeBgTablet} imageBgDesktop={homeBgDesktop} />
@@ -21,12 +28,11 @@ export const HomePage = () => {
               </p>
             </div>
             <div className='mt-[6rem] flex justify-center items-center'>
-              <button className='bg-white text-[#333] rounded-full w-[10rem] h-[10rem] text-[1.5rem] hover:ring-[2.5rem] hover:outline-none hover:ring-gray-700/[.6] lg:w-[13rem] lg:h-[13rem] lg:hover:ring-[3rem]'>EXPLORE</button>
+              <button className='bg-white text-[#333] rounded-full w-[10rem] h-[10rem] text-[1.5rem] hover:ring-[2.5rem] hover:outline-none hover:ring-gray-700/[.6] lg:w-[13rem] lg:h-[13rem] lg:hover:ring-[3rem]' onClick={handleClick}>EXPLORE</button>
             </div>
           </div>
         </div>
       </section>
-
     </>
   )
 }
