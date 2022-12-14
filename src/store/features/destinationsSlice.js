@@ -26,4 +26,5 @@ export const getDestinationsAsync = (id) => async (dispatch) => {
 
 export const { getDestinations } = destinationsSlice.actions
 export const showDestinations = (state) => state.destinations.data
+
 export default destinationsSlice.reducer
