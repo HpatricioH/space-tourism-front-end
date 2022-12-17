@@ -14,7 +14,7 @@ export const DestinationsPage = () => {
   const { id } = useParams()
 
   useEffect(() => {
-    dispatch(getDestinationsAsync(id))
+    dispatch(getDestinationsAsync(Number(id)))
   }, [id])
 
   return (
@@ -22,7 +22,7 @@ export const DestinationsPage = () => {
       <div className='w-full h-full'>
         <BgImage imageBgMobile={destinationBg} imageBgTablet={destinationBgTablet} imageBgDesktop={destinationBgDesktop} />
         <div className='text-center flex flex-col min-[640px]:text-left min-[640px]:pl-[1.5rem] lg:pt-[6rem]'>
-          <p className='text-[1.1rem] font-barlow tracking-[0.25rem] pt-[5.5rem] lg:text-[1.5rem] lg:pl-[2rem]'>
+          <p className='text-[1.1rem] font-barlow tracking-[0.25rem] pt-[5.5rem] lg:text-[1.5rem] lg:pl-[2rem]' data-testid='destination-name'>
             <span className='text-[#49494b] font-extrabold'>01 </span>PICK YOUR DESTINATION
           </p>
 
