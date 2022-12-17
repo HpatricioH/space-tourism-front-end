@@ -17,7 +17,7 @@ export const destinationsSlice = createSlice({
 
 export const getDestinationsAsync = (id) => async (dispatch) => {
   try {
-    const response = await axios.get(`${API_URL}/${id}`)
+    const response = await axios.get(`${API_URL}/${parseInt(id)}`)
     dispatch(getDestinations(response.data[0]))
   } catch (error) {
     console.log(error)

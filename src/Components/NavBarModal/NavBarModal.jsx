@@ -31,12 +31,12 @@ export const NavBarModal = () => {
   return (
     <nav className='p-[1rem] absolute w-full min-[640px]:pt-0 min-[640px]:pr-0 lg:p-[2rem] lg:pr-0'>
       <div className='flex flex-row justify-between'>
-        <img src={icon} alt='space icon' onClick={handleLink} className='min-[640px]:pt-[1rem]' />
+        <img src={icon} alt='space icon' onClick={handleLink} className='min-[640px]:pt-[1rem] cursor-pointer' />
         <img
           src={hamburger}
           alt='hamburger icon'
           onClick={modalOpen}
-          className='h-[1.35rem] self-center min-[640px]:hidden'
+          className='h-[1.35rem] self-center min-[640px]:hidden cursor-pointer'
         />
         <NavBar />
       </div>
