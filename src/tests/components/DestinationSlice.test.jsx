@@ -1,5 +1,9 @@
 /* eslint-disable no-undef */
+import { Provider } from 'react-redux'
 import { destinationsSlice } from '../../store/features/destinationsSlice'
+import store from '../../store/store'
+import { DestinationsPage } from '../../Components/DestinationsPage/DestinationsPage'
+import { render } from '@testing-library/react'
 
 describe('destinationsSlice', () => {
   it('should handle the GET_DESTINATIONS action', () => {
@@ -18,5 +22,15 @@ describe('destinationsSlice', () => {
     const expectedState = { data: [{ id: 1, name: 'Moon' }] }
 
     expect(destinationsSlice.reducer(initialState, action)).toEqual(expectedState)
+  })
+
+  it('renders content', async () => {
+    const component = render(
+      <Provider store={store}>
+        <DestinationsPage />
+      </Provider>
+    )
+
+    component.debug()
   })
 })
