@@ -9,8 +9,6 @@ import { NavBar } from '../NavBar/NavBar'
 
 Modal.setAppElement('*')
 
-// TODO: active nav with white bar
-
 export const NavBarModal = () => {
   const [openModal, setOpenModal] = useState(false)
 
@@ -42,7 +40,7 @@ export const NavBarModal = () => {
       </div>
 
       <Modal
-        isOpen={openModal} closeModal={closeModal} closeTimeoutMS={200} style={{
+        isOpen={openModal} onRequestClose={closeModal} closeTimeoutMS={200} style={{
           overlay: {
             position: 'fixed',
             left: '5.48rem'
@@ -61,7 +59,7 @@ export const NavBarModal = () => {
           }
         }}
       >
-        <div className='flex flex-col pt-[1rem]'>
+        <div data-testid='modal' className='flex flex-col pt-[1rem]'>
           <img src={closeIcon} alt='close icon' onClick={closeModal} className='w-[1.1rem] self-end mr-[1rem]' />
           <ul className='flex flex-col font-barlow text-[#fff] text-[1.3rem] mt-[3rem] [&_span]:font-bold [&_span]:pr-[2rem] tracking-widest '>
             {/* check if URL matches the current location and add active border */}
