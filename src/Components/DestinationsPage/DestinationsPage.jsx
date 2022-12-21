@@ -41,7 +41,7 @@ export const DestinationsPage = () => {
                       <li><Link to='/destinations/3' className={Number(id) === 3 ? 'nav__active' : 'nav__hover'}>EUROPA</Link></li>
                       <li><Link to='/destinations/4' className={Number(id) === 4 ? 'nav__active' : 'nav__hover'}>TITAN</Link></li>
                     </ul>
-                    <h1 className='text-[3.5rem] font-bellefair pt-[1rem] lg:text-left'>{destination.name}</h1>
+                    <h1 datatestid='destinationName' className='text-[3.5rem] font-bellefair pt-[1rem] lg:text-left'>{destination.name}</h1>
                     <p className='text-center normal-case tracking-[0.5px] leading-[1.7rem] font-barlow pb-[1.5rem] text-[#D0D6F9] lg:text-left'>{destination.description}</p>
 
                     <div className='flex flex-col justify-center items-center border-t-[0.5px] w-full border-[#59595f] gap-3 min-[640px]:flex-row min-[640px]:gap-[8rem] min-[640px]:items-baseline lg:justify-start lg:items-baseline '>
