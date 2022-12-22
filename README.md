@@ -11,10 +11,7 @@ This is a project to practice and learn [Redux](https://redux.js.org/) using [Vi
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -49,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-With this project I was able to learn and implement Redux and Testing Library. Also, I was able to use vite which was one of my new tools to use. However the most important is that I had the opportunity to implement test using Testing Library and Vitest, along of this process I had to learn how to test a redux component. 
+With this project I was able to learn and implement Redux and Testing Library. Also, I was able to use vite which was one of my new tools to use. However, the most important thing is that I had the opportunity to implement a test using Testing Library and Vitest, along with this process I had to learn how to test a redux component. 
 
 ### html
 
